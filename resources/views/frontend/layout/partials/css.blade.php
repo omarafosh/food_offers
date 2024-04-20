@@ -15,3 +15,4 @@
 <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet" />
 <!-- responsive style -->
 <link href="{{ asset('assets/frontend/css/responsive.css') }}" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
