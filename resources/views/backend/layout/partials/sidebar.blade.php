@@ -7,7 +7,7 @@
    <!-- Nav Item - Dashboard -->
    <li class="nav-item active">
       <a class="nav-link" href="index.php">
-         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <i class="fa fa-fw fa-tachometer-alt"></i>
          <span>Food Fans</span></a>
    </li>
    <!-- Divider -->
@@ -20,7 +20,7 @@
    <!-- Start Categories -->
    <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#userSidebar" aria-expanded="true" aria-controls="userSidebar">
-         <i class="fas fa-fw fa-cog"></i>
+         <i class="fa fa-fw fa-cog"></i>
          <span>Users</span>
       </a>
       <div id="userSidebar" class="collapse" aria-labelledby="headingagent" data-parent="#accordionSidebar">
@@ -35,7 +35,7 @@
    <!-- Start Categories -->
    <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#catSidebar" aria-expanded="true" aria-controls="catSidebar">
-         <i class="fas fa-fw fa-cog"></i>
+         <i class="fa fa-fw fa-cog"></i>
          <span>Categories</span>
       </a>
       <div id="catSidebar" class="collapse" aria-labelledby="headingagent" data-parent="#accordionSidebar">
@@ -51,13 +51,13 @@
    <!-- End Categories -->
    <!-- Start Products -->
    <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#productSidebar" aria-expanded="true" aria-controls="catSidebar">
-         <i class="fas fa-fw fa-cog"></i>
-         <span>Products</span>
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#offerSidebar" aria-expanded="true" aria-controls="catSidebar">
+         <i class="fa fa-fw fa-cog"></i>
+         <span>Offers</span>
       </a>
-      <div id="productSidebar" class="collapse" aria-labelledby="headingagent" data-parent="#accordionSidebar">
+      <div id="offerSidebar" class="collapse" aria-labelledby="headingagent" data-parent="#accordionSidebar">
          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Offers:</h6>
+            <h6 class="collapse-header">Offers :</h6>
             <a class="collapse-item" href="products_add.php">Add Offer</a>
             <a class="collapse-item" href="products_all.php">All Offers</a>
 
@@ -66,4 +66,38 @@
       </div>
    </li>
       <!-- End Products -->
+       <!-- Start Products -->
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#restuarantSidebar" aria-expanded="true" aria-controls="catSidebar">
+       <i class="fa fa-fw fa-cog"></i>
+       <span>Restuarant</span>
+    </a>
+    <div id="restuarantSidebar" class="collapse" aria-labelledby="headingagent" data-parent="#accordionSidebar">
+       <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Restuarant :</h6>
+          <a class="collapse-item" href="{{route('restuarant.create')}}">Add Restuarant</a>
+          <a class="collapse-item" href="{{route('restuarant.index')}}">All Restuarant</a>
+
+          <!-- <a class="collapse-item" href="category_all_relation.php">All Categories relation</a> -->
+       </div>
+    </div>
+ </li>
+    <!-- End Products -->
+           <!-- Start Products -->
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orderSidebar" aria-expanded="true" aria-controls="catSidebar">
+       <i class="fa fa-fw fa-cog"></i>
+       <span>Order</span>
+    </a>
+    <div id="orderSidebar" class="collapse" aria-labelledby="headingagent" data-parent="#accordionSidebar">
+       <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Order :</h6>
+          {{-- <a class="collapse-item" href="products_add.php">Add Order</a> --}}
+          <a class="collapse-item" href="products_all.php">All Order</a>
+          <!-- <a class="collapse-item" href="category_all_relation.php">All Categories relation</a> -->
+       </div>
+    </div>
+ </li>
+    <!-- End Products -->
+
 </ul>

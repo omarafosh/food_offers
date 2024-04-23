@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('restuarant_id');
+            $table->unsignedBigInteger('category_id');
+            $table->integer('qty');
             $table->double('cost');
             $table->timestamps();
         });
